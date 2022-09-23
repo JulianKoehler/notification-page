@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dist/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <title>Notifications page</title>
+
+</head>
+
+<body>
+  <div class="component-container">
+    <div class="component-container__wrapper">
+      <header class="component-container__wrapper__header">
+        <div class="component-container__wrapper__header__heading">
+          <h1>Notifications</h1>
+          <div class="component-container__wrapper__header__heading__notification-counter">
+            3
+          </div>
+        </div>
+        <div class="component-container__wrapper__header__mark-as-read" onclick="markAllAsRead()">
+          Mark all as read
+        </div>
+      </header>
+      <main class="component-container__wrapper__main">
+        <div class="component-container__wrapper__main__notification-container unread">
+          <div class="component-container__wrapper__main__notification-container__main">
+            <div class="component-container__wrapper__main__notification-container__main__left-side">
+              <img src="./assets/images/avatar-mark-webber.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__main__right-side">
+              <div class="component-container__wrapper__main__notification-container__main__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user">Mark
+                  Webber</span>&nbsp; reacted to your recent post &nbsp; <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user-post">My
+                  first tournament today!</span> <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__unread-dot">&#8226;</span>
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__main__right-side__event__event-time">
+                1m ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container unread">
+          <div class="component-container__wrapper__main__notification-container__main">
+            <div class="component-container__wrapper__main__notification-container__main__left-side">
+              <img src="./assets/images/avatar-angela-gray.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__main__right-side">
+              <div class="component-container__wrapper__main__notification-container__main__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user">Angela
+                  Gray</span>&nbsp; followed you <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__unread-dot">&#8226;</span>
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__main__right-side__event__event-time">
+                5m ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container unread">
+          <div class="component-container__wrapper__main__notification-container__main">
+            <div class="component-container__wrapper__main__notification-container__main__left-side">
+              <img src="./assets/images/avatar-jacob-thompson.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__main__right-side">
+              <div class="component-container__wrapper__main__notification-container__main__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user">Jacob
+                  Thompson</span>&nbsp; has joined your group &nbsp; <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__group">Chess
+                  Club</span> <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__unread-dot">&#8226;</span>
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__main__right-side__event__event-time">
+                1 day ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container">
+          <div class="component-container__wrapper__main__notification-container__private-message">
+            <div class="component-container__wrapper__main__notification-container__private-message__left-side">
+              <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__private-message__right-side">
+              <div
+                class="component-container__wrapper__main__notification-container__private-message__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__private-message__right-side__event__user">Rizky
+                  Hasanuddin</span>&nbsp; sent you a private message
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__private-message__right-side__event-time">
+                5 days ago
+              </div>
+            </div>
+          </div>
+          <div class="component-container__wrapper__main__notification-container__message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having
+            lots of fun and improving my game.
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container">
+          <div class="component-container__wrapper__main__notification-container__photo-comment">
+            <div class="component-container__wrapper__main__notification-container__photo-comment__left-side">
+              <img src="./assets/images/avatar-kimberly-smith.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__photo-comment__right-side">
+              <div class="component-container__wrapper__main__notification-container__photo-comment__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__photo-comment__right-side__event__user">Kimberly
+                  Smith</span>&nbsp; commented on your picture &nbsp;
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__photo-comment__right-side__event__event-time">
+                1 week ago
+              </div>
+            </div>
+            <img class="component-container__wrapper__main__notification-container__photo-comment__user-photo"
+              src="./assets/images/image-chess.webp" alt="chess">
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container">
+          <div class="component-container__wrapper__main__notification-container__main">
+            <div class="component-container__wrapper__main__notification-container__main__left-side">
+              <img src="./assets/images/avatar-nathan-peterson.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__main__right-side">
+              <div class="component-container__wrapper__main__notification-container__main__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user">Nathan
+                  Peterson</span>&nbsp; reacted to your recent post &nbsp; <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user-post">5
+                  end-game strategies to increase your win rate</span>
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__main__right-side__event__event-time">
+                2 weeks ago
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="component-container__wrapper__main__notification-container">
+          <div class="component-container__wrapper__main__notification-container__main">
+            <div class="component-container__wrapper__main__notification-container__main__left-side">
+              <img src="./assets/images/avatar-anna-kim.webp" alt="profile-picture">
+            </div>
+            <div class="component-container__wrapper__main__notification-container__main__right-side">
+              <div class="component-container__wrapper__main__notification-container__main__right-side__event">
+                <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__user">Anna
+                  Kim</span>&nbsp; left the group &nbsp; <span
+                  class="component-container__wrapper__main__notification-container__main__right-side__event__group">Chess
+                  Club</span>
+              </div>
+              <div
+                class="component-container__wrapper__main__notification-container__main__right-side__event__event-time">
+                2 weeks ago
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="./src/js/app.js"></script>
+</body>
+
+</html>
