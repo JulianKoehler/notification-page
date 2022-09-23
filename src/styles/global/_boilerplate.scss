@@ -21,7 +21,7 @@ body {
 }
 
 @media (max-height: 800px) {
-    body {
+    .component-container {
         transform: scale(0.8);
     }
 }
@@ -32,9 +32,10 @@ body {
 
         .component-container {
             padding: 0.2em;
+            transform: scale(0.93);
 
             &__wrapper {
-                transform: scale(0.93);
+                
 
                 &__main__notification-container__main__right-side__event {
                     padding-right: 0.2em;
